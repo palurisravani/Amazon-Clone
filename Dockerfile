@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . /app
 
-COPY . /usr/share/nginx/html/
+RUN cp /app/* -r /usr/share/nginx/html/
 
 EXPOSE 80
 
